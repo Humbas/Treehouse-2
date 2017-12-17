@@ -1,0 +1,216 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Aller', sans-serif;
+	line-height: 1.6;
+	color: #4a4a4a;
+	background:white;
+	overflow-x: hidden;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+	color: #4a4a4a;
+}
+
+h2,
+h3,
+a {
+	color: #4a4a4a;
+	text-decoration: none;
+}
+
+a:hover	{
+	font-weight:bold;
+}
+
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+
+/* ---- Layout Containers ---- */
+
+
+/*footer sticker*/
+.wrapper{
+min-height:calc(100vh - 12px);
+}
+
+.container{
+ width:90%;
+ margin:0 auto;
+ position:relative;
+}
+
+
+.main-footer {
+border-top:1px solid #e7e7e7;
+padding-top:1em;
+padding-bottom:2em;
+margin:0 auto;
+width:90%;
+}
+
+.footermenu{
+display:none;
+	}
+
+.footermenu li{
+display:inline-block;
+float:left;
+margin-left:10px;	
+}
+
+.rightmenu{
+float:left;	
+display:inline-block;
+}
+
+.backtotop{
+display:inline-block;
+float:right;
+}	
+
+
+.banner {
+color: #fff;
+ background: #fafafa;
+ padding: 3.2em 0;
+ margin-bottom:50px;
+}
+
+
+.column{
+margin-right:1.5em;
+margin-left:1.5em;
+}
+
+.project{
+text-align:center;	
+}
+
+.project img{
+	width:100%;
+}
+
+
+.tagline{
+	color: #4a4a4a;
+	text-align:center;
+}
+
+.profile{
+background:#ededed;
+min-height:250px;
+width:100%;
+background-image:url(../images/profile.png);
+background-repeat: no-repeat;
+background-position: center; 
+margin-bottom:2em;
+}
+
+.maintitle{
+	text-align:center; 
+	width:100%; 
+	text-transform:uppercase;
+	margin-bottom:1em;
+	}
+	
+	
+.contact{
+width:100%;
+margin-top:3em;
+text-align:center;
+min-height:20em;
+}
+
+
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+	
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 769px) {
+
+.column{
+margin-bottom:2em;
+float:left;
+width:47%;
+margin-right:0;
+margin-left:0;
+}
+
+.column{
+padding-left:4%;
+margin-bottom:1%;
+}
+
+
+.footermenu{
+float:right;
+display:inline-block;
+}
+
+.backtotop{
+display:none;
+}	
+
+}
+
+
+@media(min-width:1025px)
+  {
+
+.column{
+padding-left:2%;
+margin-bottom:2%;
+width:32%;
+}
+
+
+.banner {
+padding: 8.2em 0;
+}
+
+.tagline{
+	float:left;	
+	text-align:left;
+	width:70%;
+
+}
+
+.profile{
+float:right;
+width:30%;
+}
+
+}
